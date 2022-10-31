@@ -73,4 +73,9 @@ public class CustomList extends ArrayAdapter<City> {
         return ans;
 
     }
+
+    public void deleteCity(City city) throws Exception {
+
+
+    }
 }
