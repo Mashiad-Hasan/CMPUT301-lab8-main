@@ -58,8 +58,18 @@ public class CustomList extends ArrayAdapter<City> {
      *for the first phase it will be empty
      * @param city
      */
+
+    public City getCity (int index){
+        return cities.get(index);
+    }
+
     public void addCity(City city){
 
         cities.add(city);
+    }
+
+    public boolean hasCity(City city) {
+        return false;
+
     }
 }
