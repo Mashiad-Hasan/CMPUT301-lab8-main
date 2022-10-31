@@ -53,4 +53,14 @@ public class CustomListTest {
         list.deleteCity(city);
         assertEquals(list.getCount(), 0);
     }
+
+    @Test
+    public void countCitiesTest(){
+        list = new CustomList(null, new ArrayList<City>());
+
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("Kelowna", "BC"));
+        list.addCity(new City("Kamloops", "BC"));
+        assertEquals(list.countCities(), 3);
+    }
 }
